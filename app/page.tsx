@@ -54,6 +54,16 @@ const randomTopTexts = [
   "When someone says",
   "Me pretending to",
   "The teacher when",
+  "When you open the fridge for the 10th time",
+  "When autocorrect ruins your life",
+  "When you realize it's Monday again",
+  "When you laugh at your own joke",
+  "When you send a risky text",
+  "When you remember that one embarrassing moment",
+  "When you try to act normal",
+  "When you see your crush",
+  "When you finish a series and don't know what to do",
+  "When you hear someone say 'free food'",
 ]
 
 const randomBottomTexts = [
@@ -67,6 +77,16 @@ const randomBottomTexts = [
   "and everybody clapped",
   "but I'm not complaining",
   "and that's a fact",
+  "and instantly regretted it",
+  "because why not?",
+  "and my WiFi died",
+  "and I just stood there",
+  "and my brain said 'nope'",
+  "and I pretended not to care",
+  "and then I woke up",
+  "and my pet judged me",
+  "and I still don't get it",
+  "and that's how legends are born",
 ]
 
 // Font options
@@ -171,7 +191,7 @@ async function generateMemeText(prompt: string, retryCount = 0): Promise<{ topTe
           },
         ],
         temperature: 0.7,
-        max_tokens: 100,
+        max_tokens: 50,
       }),
     })
 
